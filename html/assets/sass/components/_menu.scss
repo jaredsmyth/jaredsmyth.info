@@ -125,3 +125,10 @@
 		float: left;
 	}
 }
+
+@media only screen and (max-width: $mobile) {
+	.menu {
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+}

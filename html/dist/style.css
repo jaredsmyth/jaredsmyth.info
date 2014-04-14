@@ -433,6 +433,11 @@ em, cite {
     background-size: cover;
     float: left; }
 
+@media only screen and (max-width: 640px) {
+  .menu {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; } }
+
 .frame {
   position: relative;
   overflow: hidden;
@@ -611,22 +616,25 @@ em, cite {
       bottom: 0; }
 
 @media only screen and (max-width: 640px) {
-  .p-portfolio-landing .portfolio-hero-content {
-    height: auto;
-    width: 100%;
-    padding: 0px 15px; }
-    .p-portfolio-landing .portfolio-hero-content .linklist {
-      bottom: initial; }
-  .p-portfolio-landing .portfolio-hero-image {
-    height: auto;
-    width: 100%;
-    padding: 0px 15px; }
-    .p-portfolio-landing .portfolio-hero-image.has-iframe {
-      height: 100%; }
-    .p-portfolio-landing .portfolio-hero-image img {
-      max-width: 100%;
+  .p-portfolio-landing {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; }
+    .p-portfolio-landing .portfolio-hero-content {
+      height: auto;
       width: 100%;
-      margin-bottom: 15px; } }
+      padding: 0px 15px; }
+      .p-portfolio-landing .portfolio-hero-content .linklist {
+        bottom: initial; }
+    .p-portfolio-landing .portfolio-hero-image {
+      height: auto;
+      width: 100%;
+      padding: 0px 15px; }
+      .p-portfolio-landing .portfolio-hero-image.has-iframe {
+        height: 100%; }
+      .p-portfolio-landing .portfolio-hero-image img {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 15px; } }
 
 @media only screen and (max-width: 1024px) {
   .p-portfolio-landing .portfolio-hero-content p {

@@ -66,6 +66,8 @@
 
 @media only screen and (max-width: $mobile) {
   .p-portfolio-landing {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
     .portfolio-hero-content {
       height: auto;
       width: 100%;

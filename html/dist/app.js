@@ -419,15 +419,15 @@ Space.App = (function() {
     	this.hammer = Hammer("body");
 
     	this.hammer.on("dragstart", function(ev) {
-
-				if (ev.gesture && ev.gesture.preventDefault) {
-    			if(!$(ev.target.parentNode).hasClass('portfolio-hero-image')) {
-    		    ev.gesture.preventDefault();
-    		  } else {
-    		  	ev.gesture.stopPropagation();
-    		  }
-    		}
-
+            if($(window).width() >= 641) {
+    			if (ev.gesture && ev.gesture.preventDefault) {
+        			if(!$(ev.target.parentNode).hasClass('portfolio-hero-image')) {
+        		    ev.gesture.preventDefault();
+        		  } else {
+        		  	ev.gesture.stopPropagation();
+        		  }
+        		}
+            }
     	});
 
     	this.setupSwiper();
