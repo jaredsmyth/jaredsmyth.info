@@ -1,0 +1,28 @@
+.icon {
+	display: inline-block;
+	background-size: contain;
+	background-position: center center;
+
+	font-size: 0;
+	color: transparent;
+}
+
+.icon-block {
+	display: block;
+}
+
+.icon-container {
+	display: inline-block;
+	padding: 6px;
+	border-radius: 3px;
+	background-color: black;
+
+	& > .icon { display: block; }
+}
+
+@each $i in (8 16 24 32 40 48 64 72 96 128) {
+	.icon-#{$i} {
+		width: #{$i}px;
+		height: #{$i}px;
+	}
+}

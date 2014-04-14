@@ -1,0 +1,22 @@
+.media{
+    display: table;
+    width: 100%;
+}
+ 
+.media-preview { // child elements may need a max-width
+    display: table-cell;
+    vertical-align: top;
+    width: 1px; 
+
+    .icon,
+    img {
+    	display: block;
+    }
+}
+
+.media-content {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+    padding-left: $spacing;
+}

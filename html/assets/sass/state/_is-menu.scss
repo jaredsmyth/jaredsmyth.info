@@ -1,0 +1,25 @@
+.is-menu-expanded {
+	.swipeage {
+	    transform: translate3d(120px, 0, 0);
+		// pointer-events: none;
+
+		box-shadow: rgba(darken($color-dark, 5), 0.5) 0 0 $spacing;
+	}
+
+	.menu-link {
+		&.is-active {
+			& + .menu-subnav {
+				display: block;
+				max-height: 800px;
+				
+				.menu-subnav-link {
+					padding-left: 20px;
+				}
+
+				opacity: 1;
+				
+				border-bottom: 1px solid lighten($color-dark, 10);
+			}
+		}
+	}
+}

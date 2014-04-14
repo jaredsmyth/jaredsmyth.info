@@ -1,0 +1,11 @@
+.slice {
+    display: table;
+    table-layout: fixed; // makes items equal sizes automatically
+    width: 100%;
+}
+ 
+.slice-item {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+}

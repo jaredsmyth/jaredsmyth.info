@@ -1,0 +1,28 @@
+.p-home-landing {
+	position: relative;
+
+	.general-block {
+		position: absolute;
+		top: 43%;
+		left: 0;
+
+		height: 40%;
+
+		color: #555;
+		z-index: 51;
+
+		// .content {
+			p {
+				max-width: 650px;
+				font-size: 20px;
+				span {
+					display: block;
+				}
+			}
+		// }
+
+		a { 
+		 	text-decoration: underline;
+		}
+	}
+}

@@ -1,0 +1,34 @@
+.general {
+	display: block;
+	width: 100%;
+
+	@extend .clearfix;
+}
+
+.general-block { 
+	display: block;
+	float: left;
+}
+
+.general-column {
+    display: block;
+    height: 100%;
+    float: left;
+
+    @extend .clearfix;
+}
+
+// Halves
+.general-1of2 { width: (100% / 2); }
+
+// Thirds
+.general-1of3 { width: (100% / 3); }
+.general-2of3 { width: (100% / 3) * 2; }
+
+// Fifths
+.general-1of5 { width: (100% /5); }
+.general-2of5 { width: (100% /5) * 2; }
+.general-3of5 { width: (100% /5) * 3; }
+.general-4of5 { width: (100% /5) * 4; }
+
+.general-padding { padding: $spacing-double; }

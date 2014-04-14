@@ -1,0 +1,24 @@
+.content {
+	color: $color-dark;
+
+	// text-shadow: black 0 1px 0;
+
+	h1 { @extend .header; @extend .header-large; }
+	h2 { @extend .header; }
+	h3 { @extend .header; @extend .header-small; }
+
+	p { @extend .copy; }
+
+	ul, ol { @extend .list; }
+	li { @extend .list-item; }
+
+
+	h1, h2, h3, h4, h5, h6 {
+		line-height: 1em;
+	}
+
+	h1, h2, h3, h4, h5, h6,
+	p, ul, ol {
+		margin-bottom: $spacing;
+	}
+}

@@ -1,0 +1,44 @@
+// Site-wide Variables
+
+
+// FONTS
+
+$site-font-text: "Maven Pro", sans-serif;
+$site-font-header: "Maven Pro", Arial, sans-serif;
+$site-font-mono: monospace;
+
+
+// COLORS
+
+$color-light: white;
+$color-dark: #1e2223;
+
+$site-bg: $color-light;
+$site-color: $color-dark;
+
+$selection-color: mix($color-light, $color-dark, 70); // when a user highlights text this is the super duper color!
+
+$orange: lighten(#c0611c, 10);
+
+$teal: #57c1b4;
+
+
+// site spacing, keep it consistant bitches
+
+$spacing: 20px;
+$spacing-double: $spacing * 2;
+$spacing-quad:   $spacing * 4;
+$spacing-half:   $spacing / 2;
+$spacing-fourth: $spacing / 4;
+
+
+// Site Spec Spacing
+
+$menu-width: 70px;
+$menu-width-expanded: 210px;
+
+
+// responsive
+$mobile: 640px;
+$tablet: 1024px;
+$tablet-portrait: 880px;

@@ -1,0 +1,124 @@
+.p-portfolio-landing {
+    position: relative;
+
+    overflow: hidden;
+
+    .portfolio-content {
+        background: #FFF;
+    }
+
+    .portfolio-header-links {
+      li {
+        display: inline;
+
+        a {
+          color: #787878;
+          border: 1px solid #575757;
+          text-decoration: none;
+          border-radius: 5px;
+          padding: 8px 40px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .portfolio-hero-content {
+        height: 100%;
+        position: fixed;
+
+        .linklist {
+            bottom: 10px;
+        }
+    }
+
+    .portfolio-hero-image {
+        position: relative;
+        height: 100%;
+        max-width: 880px;
+        float: right;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+
+        img {
+           position: relative;
+            -webkit-transform: translate3d(0,0,0);
+            width: auto;
+            max-width: 97%;
+            height: auto;
+            max-height: 90%;
+            margin-bottom: 15px;
+        }
+
+        iframe {
+          width: 80%;
+          height: 100%;
+        }
+        .cover-up {
+          position: absolute;
+          height: 40px;
+          width: 100%;
+          background-color: white;
+          bottom: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+  .p-portfolio-landing {
+    .portfolio-hero-content {
+      height: auto;
+      width: 100%;
+      padding: 0px 15px;
+      
+      .linklist {
+        bottom: initial;
+      }
+    }
+    .portfolio-hero-image {
+      height: auto;
+      width: 100%;
+      padding: 0px 15px;
+
+      &.has-iframe {
+        height: 100%;
+      }
+
+      img {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: $tablet) {
+  .p-portfolio-landing {
+    .portfolio-hero-content {
+      p {
+        font-size: 15px;
+        line-height: 22px;
+      }
+      h1 {
+        margin-bottom: 10px;
+        font-size: 28px;
+      }
+      .linklist-item {
+        .link-header {
+          font-size: 18px;
+        }
+        .linklist-item {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: $tablet-portrait) {
+  .p-portfolio-landing {
+    .portfolio-hero-content {
+      padding: 15px;
+      position: relative;
+    }
+  }
+}

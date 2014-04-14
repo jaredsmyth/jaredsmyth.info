@@ -1,0 +1,291 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix, .swipeage-wrapper {
+  zoom: 1; }
+  .clearfix:before, .swipeage-wrapper:before, .clearfix:after, .swipeage-wrapper:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  .clearfix:after, .swipeage-wrapper:after {
+    clear: both; }
+
+html, body {
+  height: 100%;
+  min-height: 100%; }
+
+body {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  background: white;
+  color: black;
+  text-transform: none;
+  text-decoration: none;
+  text-align: left;
+  word-wrap: normal;
+  height: 100%;
+  width: 100%;
+  font-variant: normal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0); }
+
+::selection {
+  background: #b2b2b2; }
+
+::-moz-selection {
+  background: #b2b2b2; }
+
+img::selection {
+  background: #b2b2b2; }
+
+img::-moz-selection {
+  background: #b2b2b2; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-style: italic;
+  font-weight: 700;
+  font-family: Verdana, sans-serif; }
+
+h1 {
+  font-size: 66px; }
+
+h2 {
+  font-size: 48px; }
+
+h3 {
+  font-size: 36px; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+em, cite {
+  font-style: italic; }
+
+* {
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  transition-property: none;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; }
+
+.media {
+  display: table;
+  width: 100%; }
+
+.media-preview {
+  display: table-cell;
+  vertical-align: top;
+  width: 1%; }
+  .media-preview .icon, .media-preview img {
+    display: block; }
+
+.media-content {
+  display: table-cell;
+  vertical-align: top;
+  width: 99%;
+  padding-left: 20px; }
+
+.icon {
+  display: inline-block;
+  background-size: contain;
+  font-size: 0;
+  color: transparent; }
+
+.icon-block {
+  display: block; }
+
+.icon-8 {
+  width: 8px;
+  height: 8px; }
+
+.icon-16 {
+  width: 16px;
+  height: 16px; }
+
+.icon-24 {
+  width: 24px;
+  height: 24px; }
+
+.icon-32 {
+  width: 32px;
+  height: 32px; }
+
+.icon-40 {
+  width: 40px;
+  height: 40px; }
+
+.icon-48 {
+  width: 48px;
+  height: 48px; }
+
+.icon-64 {
+  width: 64px;
+  height: 64px; }
+
+.icon-72 {
+  width: 72px;
+  height: 72px; }
+
+.icon-96 {
+  width: 96px;
+  height: 96px; }
+
+.icon-128 {
+  width: 128px;
+  height: 128px; }
+
+.swipeage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  overflow: hidden;
+  background-color: white;
+  transition-property: padding, transform;
+  transform: translate3d(0, 0, 0); }
+  .swipeage:after {
+    content: "\0020"; }
+
+.swipeage-wrapper {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.swipeage-item {
+  float: left;
+  height: 100%;
+  padding: 50px; }
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 100%;
+  background-color: #7f7f7f;
+  color: white;
+  overflow: hidden; }
+  .menu.is-dragging {
+    transition-property: none; }
+
+.menu-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+.menu-padding {
+  padding-left: 19px; }
+
+.menu-header .icon {
+  display: block; }
+.menu-header a {
+  display: block;
+  padding: 19px; }
+
+.menu-link {
+  display: block;
+  padding: 6px 19px;
+  color: white;
+  text-decoration: none; }
+  .menu-link:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #333; }
+  .menu-link .media-content {
+    padding-top: 4px;
+    padding-left: 20px;
+    transition-property: padding; }
+  .menu-link.is-active {
+    background-color: #666; }
+
+.menu-control {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  padding: 19px; }
+
+.menu-control-static, .menu-control-expanded {
+  position: absolute;
+  right: 19px;
+  bottom: 19px;
+  transition-property: opacity; }
+
+.menu-control-expanded {
+  opacity: 0;
+  z-index: 90; }
+
+.menu-control-static {
+  opacity: 1;
+  z-index: 100; }
+
+.application {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.application-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 70px; }
+  .application-content.is-dragging {
+    transition-property: none; }
+
+
+.is-scrolling, .is-scrolling * {
+  pointer-events: none; }
+
+.is-menu-expanded .swipeage {
+  transform: translate3d(160px, 0, 0);
+  pointer-events: none; }
+.is-menu-expanded .menu-control-static {
+  opacity: 0;
+  z-index: 90; }
+.is-menu-expanded .menu-control-expanded {
+  opacity: 1;
+  z-index: 100; }
+
+/*# sourceMappingURL=ca-sales-app */

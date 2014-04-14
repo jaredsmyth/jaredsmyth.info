@@ -1,0 +1,40 @@
+.frame {
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	
+	&.is-loading {
+		.frame-loader {
+			opacity: 1;
+			pointer-events: auto;
+		}
+	}
+
+	&.is-active, &.swipeage-item {
+		.bookmark,
+		.nameplate {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+
+	}
+}
+
+.frame-loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	background: white; //url(images/loader.gif) center center no-repeat;
+	background-size: auto;
+
+	transition-property: opacity;
+	transition-duration: 1.2s;
+
+	opacity: 0;
+	z-index: 50;
+	pointer-events: none;
+}

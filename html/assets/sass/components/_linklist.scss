@@ -1,0 +1,40 @@
+.linklist {
+    position: absolute;
+    min-width: 50%;
+}
+
+.linklist-item {
+    color: $color-light;
+    border-bottom: 1px solid $color-dark;
+    font-size: 11px;
+    padding: 4px 0;
+    font-weight: bold;
+    &.link-header {
+        font-size: 18px;
+    }
+}
+.linklist-link {
+    display: block;
+    font-weight: bold;
+    color: $color-light;
+}
+
+.linklist-cta {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.linklist-blue {
+    .linklist-item {
+        color: $orange;
+        border-bottom: 1px solid $color-dark;
+    }
+
+    .linklist-link { color: $orange; &:hover {color: $color-dark; } }
+}
+
+@media only screen and (max-width: $mobile) {
+    .linklist {
+        position: relative;
+    }
+}

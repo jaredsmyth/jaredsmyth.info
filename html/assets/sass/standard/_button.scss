@@ -1,0 +1,14 @@
+.button {
+	display: inline-block;
+	padding: $spacing * 0.25 $spacing
+			 $spacing * 0.35 $spacing;
+
+	background-color: $color-dark;
+	color: $color-light;
+
+	border-radius: 4px;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
