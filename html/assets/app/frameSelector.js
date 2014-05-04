@@ -61,10 +61,13 @@ Space.FrameSelector = (function () {
                     images = '[<% _.each(images, function(name){%>"<%= name %>",<%});%>]';
 
                 for (i = 1; i <= self.attr('image-length'); i++) {
-                    imageList.push(self.attr('data-submenu').split('-').pop() + '-' + i);
+                    var iteration = self.attr('data-submenu').split('-').pop() + '-' + i;
+                    imageList.push(iteration);
+                    app.preLoad("dist/images/jpeg/" + subTitle + '/' + iteration + ".jpg");
                 }
 
                 var readyToInsert = _.template(images, {images: imageList });
+
 
                 var render = templ({title: subTitle, imageArray: readyToInsert }),
                     method = {};

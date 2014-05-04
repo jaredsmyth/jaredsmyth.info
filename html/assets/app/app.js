@@ -26,6 +26,11 @@ Space.App = (function() {
     	content: ".application-content"
     },
 
+    preLoad: function(item) {
+        var img = new Image();
+        img.src = item;
+    },
+
     onRender: function() {
     	var root = this;
 
