@@ -212,6 +212,22 @@ em, cite {
 .list-item-extra-bold {
   font-weight: 900; }
 
+.contact-links span {
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 16px; }
+.contact-links a {
+  text-decoration: none;
+  font-size: 15px; }
+
+@media only screen and (max-width: 880px) {
+  .contact-links {
+    width: 100%; }
+    .contact-links span {
+      font-size: 13px; }
+    .contact-links a {
+      font-size: 12px; } }
+
 .icon {
   display: inline-block;
   -webkit-background-size: contain;
