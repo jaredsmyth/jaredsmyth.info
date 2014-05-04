@@ -16168,7 +16168,7 @@ helpers = this.merge(helpers, Handlebars.helpers); data = data || {};
   
 
 
-  return "<div class=\"p-portfolio-landing general content\">\n    <div class=\"general-column general-2of5 general-padding portfolio-content portfolio-hero-content\">\n        <h1>\n            <span class=\"header-bold\">After Hours</span>\n        </h1>\n\n        <p>On-going series of long exposures of found suburban scense shot on medium format film primarily around Northern California.\n        </p>\n    </div>\n    \n</div>";
+  return "<div class=\"p-portfolio-landing general content\">\n    <div class=\"general-column general-2of5 general-padding portfolio-content portfolio-hero-content\">\n        <h1>\n            <span class=\"header-bold\">After Hours</span>\n        </h1>\n\n        <p>On-going series of long exposures of found suburban scenes shot on medium format film primarily around Northern California.\n        </p>\n    </div>\n    \n</div>";
   });
 
 this["Templates"]["assets/templates/page/photos/extendedinteractions/landing.hbs"] = Handlebars.template(function (Handlebars,depth0,helpers,partials,data) {
